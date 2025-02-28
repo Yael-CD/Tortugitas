@@ -1,7 +1,9 @@
 from turtle import *
+import turtle
 t3=Turtle()
 t3.shape("turtle")
 tMeta=Turtle()
+
 #Dibujar la Meta
 tMeta.speed(200)
 num_lineas = 2 
@@ -34,7 +36,28 @@ while contador < num_lineas:
         tMeta.forward(25)
         tMeta.pendown()
     contador += 1
-    
+
+#Dibujar la T2
+t = turtle.Turtle()
+t.shape("turtle")
+t.color("green")
+t.speed(8)  
+
+# Posición inicial
+t.penup()
+t.goto(-300, 0)  # Inicia en (-400, 0)
+t.pendown()
+
+radio = 10 
+
+for _ in range(30):  
+    t.circle(radio) 
+    t.penup()
+    t.goto(t.xcor() + radio * 2, 0) 
+    t.pendown()
+    radio += 2 
+
+
 #Dibujar la T3
 t3.penup()
 t3.goto(-400,-280)
