@@ -34,7 +34,27 @@ while contador < num_lineas:
         tMeta.forward(25)
         tMeta.pendown()
     contador += 1
-    
+t1=Turtle()
+t1.shape("turtle")
+#tortuga 1
+#-400,280
+t1.speed(15)
+t1.penup()
+t1.goto(-400,280)
+for _ in range(16):
+    t1.pendown()
+    t1.pensize(5)
+    t1.color("orange")
+    t1.left(45)
+    t1.forward(50)
+    t1.left(135)
+    t1.forward(50)
+    t1.right(135)
+    t1.forward(50)
+    t1.right(148)
+    t1.forward(72)
+    t1.left(103)
+    t1.forward(50)    
 #Dibujar la T3
 t3.penup()
 t3.goto(-400,-280)
